@@ -13,7 +13,7 @@ class YTDownload:
             yt.download(output_path=self.output_path)
         except:
             print("An error has occurred")
-        print(f"Video downloaded successfully from '{url}'. File stored at '{self.output_path}'")
+        print(f"Video downloaded successfully from '{url}'. File stored at '{self.output_path}'.")
     
     def default_folder(self):
         import os
