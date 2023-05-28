@@ -11,20 +11,25 @@ To set this CLI up, please follow these steps:
     ```
     git clone https://github.com/bfrangi/pytube-downloader.git
     ```
-2. Navigate to your home folder:
+2. Install `pytube`:
+
+    ```
+    pip install pytube
+    ```
+3. Navigate to your home folder:
 
     ```
     cd ~
     ```
 
-3. Open up your `.bashrc` or `.zshrc` file.
-4. Add the following alias:
+4. Open up your `.bashrc` or `.zshrc` file.
+5. Add the following alias:
 
     ```
     alias pytube="python3 /path/to/pytube-downloader/pyTube.py"
     ```
-5. Restart your terminal
-6. Now you can simply use the downloader as:
+6. Restart your terminal
+7. Now you can simply use the downloader as:
 
     ```
     pytube [url] [output_path]
