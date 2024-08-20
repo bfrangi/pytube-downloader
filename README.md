@@ -14,7 +14,7 @@ To set this CLI up, please follow these steps:
 2. Install `pytube`:
 
     ```
-    pip install pytube
+    pip install pytube ffmpeg-python
     ```
 3. Navigate to your home folder:
 
@@ -23,7 +23,7 @@ To set this CLI up, please follow these steps:
     ```
 
 4. Open up your `.bashrc` or `.zshrc` file.
-5. Add the following alias:
+5. Add the following alias, replacing `/path/to/pytube-downloader` with the path to the cloned repo:
 
     ```
     alias pytube="python3 /path/to/pytube-downloader/pyTube.py"
@@ -41,13 +41,16 @@ Use the `--help` flag to see usage information.
 
 ```
 >>> pytube --help
-usage: pyTube.py [-h] [-v] [url] [output_path]
+usage: pyTube.py [-h] [-v] [-d] [url] [output_path]
 
 positional arguments:
   url
   output_path
 
-optional arguments:
+options:
   -h, --help     show this help message and exit
   -v, --verbose  use this flag to show more information about the download
+  -d, --dash     use this flag to download DASH streams (higher quality but video and audio
+                 are downloaded separately and then muxed)
+
 ```
