@@ -14,7 +14,7 @@ To set this CLI up, please follow these steps:
 2. Install `pytube`:
 
     ```
-    pip install pytube ffmpeg-python
+    pip install pytube pytubefix ffmpeg-python
     ```
 3. Navigate to your home folder:
 
